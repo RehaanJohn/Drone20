@@ -1,0 +1,85 @@
+2026-01-17 15:57:25 | INFO     | setup_logging:82 | Debug log file created: C:\Users\Gaming\Pictures\Coding_Projects\Drone\debug.log
+2026-01-17 15:57:25 | INFO     | main:547 | 🎯 REALITYSCAN AUTOMATED ALIGNMENT
+2026-01-17 15:57:25 | INFO     | main:562 | 
+=== PHASE 1: Path Validation ===
+2026-01-17 15:57:25 | INFO     | check_paths:142 | 🔍 Checking paths...
+2026-01-17 15:57:25 | DEBUG    | start:103 | Started timing: Path checking
+2026-01-17 15:57:25 | DEBUG    | check_paths:152 | Checking RealityScan executable: c:\Program Files\Epic Games\RealityScan_2.1\RealityScan.exe
+2026-01-17 15:57:25 | DEBUG    | check_paths:163 | ✓ RealityScan executable found
+2026-01-17 15:57:25 | DEBUG    | check_paths:167 | Checking images folder: C:\Users\Gaming\Pictures\Coding_Projects\Drone\Images
+2026-01-17 15:57:25 | DEBUG    | check_paths:174 | ✓ Images folder found
+2026-01-17 15:57:25 | DEBUG    | check_paths:178 | Scanning for images...
+2026-01-17 15:57:25 | INFO     | check_paths:210 | ✅ Found 178 images
+2026-01-17 15:57:25 | DEBUG    | check_paths:211 | Image details: ['IMG_1553.JPG', 'IMG_1554.JPG', 'IMG_1555.JPG', 'IMG_1556.JPG', 'IMG_1557.JPG']...
+2026-01-17 15:57:25 | INFO     | check_paths:212 | ✅ RealityScan executable located
+2026-01-17 15:57:25 | DEBUG    | save_debug_info:135 | Saved debug info to: C:\Users\Gaming\Pictures\Coding_Projects\Drone\debug_path_check_success_20260117_155725.json
+2026-01-17 15:57:25 | INFO     | end:110 | ⏱️  Path checking: 0.01s
+2026-01-17 15:57:25 | INFO     | main:570 | 
+=== PHASE 2: Command Generation ===
+2026-01-17 15:57:25 | INFO     | build_command:223 | 🔧 Building command...
+2026-01-17 15:57:25 | DEBUG    | start:103 | Started timing: Command building
+2026-01-17 15:57:25 | DEBUG    | build_command:236 | Added: -headless
+2026-01-17 15:57:25 | DEBUG    | build_command:246 | Added: -newScene
+2026-01-17 15:57:25 | DEBUG    | build_command:260 | Added: -addFolder C:\Users\Gaming\Pictures\Coding_Projects\Drone\Images\
+2026-01-17 15:57:25 | INFO     | build_command:264 |   📍 Feature detection enabled
+2026-01-17 15:57:25 | DEBUG    | build_command:267 | Added: -detectFeatures
+2026-01-17 15:57:25 | INFO     | build_command:276 |   📍 Using full alignment (slower, best quality)
+2026-01-17 15:57:25 | DEBUG    | build_command:279 | Added: -align
+2026-01-17 15:57:25 | DEBUG    | build_command:284 | Added: -selectMaximalComponent
+2026-01-17 15:57:25 | DEBUG    | build_command:289 | Added: -save C:\Users\Gaming\Pictures\Coding_Projects\Drone\hammer_reconstruction.rsproj
+2026-01-17 15:57:25 | DEBUG    | build_command:294 | Added: -quit
+2026-01-17 15:57:25 | DEBUG    | save_debug_info:135 | Saved debug info to: C:\Users\Gaming\Pictures\Coding_Projects\Drone\debug_commands_20260117_155725.json
+2026-01-17 15:57:25 | INFO     | end:110 | ⏱️  Command building: 0.00s
+2026-01-17 15:57:25 | INFO     | main:575 | 
+=== PHASE 3: Execution ===
+2026-01-17 15:57:25 | INFO     | run_realityscan:306 | 🚀 Preparing to execute RealityScan...
+2026-01-17 15:57:25 | DEBUG    | start:103 | Started timing: Total execution
+2026-01-17 15:57:25 | INFO     | run_realityscan:322 | 
+📋 Command to execute:
+2026-01-17 15:57:25 | INFO     | run_realityscan:323 |    "c:\Program Files\Epic Games\RealityScan_2.1\RealityScan.exe" -headless -newScene -addFolder C:\Users\Gaming\Pictures\Coding_Projects\Drone\Images\ -detectFeatures -align -selectMaximalComponent -save C:\Users\Gaming\Pictures\Coding_Projects\Drone\hammer_reconstruction.rsproj -quit
+
+2026-01-17 15:57:27 | INFO     | run_realityscan:343 | 🚀 STARTING REALITYSCAN ALIGNMENT
+2026-01-17 15:57:27 | DEBUG    | run_realityscan:347 | Executing command: ['c:\\Program Files\\Epic Games\\RealityScan_2.1\\RealityScan.exe', '-headless', '-newScene', '-addFolder', 'C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\', '-detectFeatures', '-align', '-selectMaximalComponent', '-save', 'C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\hammer_reconstruction.rsproj', '-quit']
+2026-01-17 15:57:27 | DEBUG    | start:103 | Started timing: RealityScan process
+2026-01-17 15:57:28 | INFO     | run_realityscan:361 | ✅ RealityScan started (PID: 54944)
+2026-01-17 15:57:28 | INFO     | run_realityscan:362 | ⏳ Processing... (this may take several minutes)
+2026-01-17 15:57:28 | INFO     | run_realityscan:363 | 💡 Monitor progress in Task Manager - look for RealityScan.exe GPU usage
+2026-01-17 15:57:28 | DEBUG    | run_realityscan:369 | Waiting for process to complete...
+2026-01-17 15:57:55 | INFO     | end:110 | ⏱️  RealityScan process: 27.93s
+2026-01-17 15:57:55 | INFO     | run_realityscan:407 | ✅ ALIGNMENT COMPLETE!
+2026-01-17 15:57:55 | INFO     | run_realityscan:409 | 
+📂 Project saved to: C:\Users\Gaming\Pictures\Coding_Projects\Drone\hammer_reconstruction.rsproj
+2026-01-17 15:57:55 | INFO     | run_realityscan:412 | ✅ Project file created successfully
+2026-01-17 15:57:55 | DEBUG    | run_realityscan:414 | Project file size: 12541 bytes (12.25 KB)
+2026-01-17 15:57:55 | DEBUG    | save_debug_info:135 | Saved debug info to: C:\Users\Gaming\Pictures\Coding_Projects\Drone\debug_execution_20260117_155755.json
+2026-01-17 15:57:55 | INFO     | end:110 | ⏱️  Total execution: 30.21s
+2026-01-17 15:57:55 | INFO     | main:580 | 
+=== PHASE 4: Next Steps ===
+2026-01-17 15:57:55 | INFO     | print_next_steps:464 | 
+============================================================
+2026-01-17 15:57:55 | INFO     | print_next_steps:465 | 📋 NEXT STEPS
+2026-01-17 15:57:55 | INFO     | print_next_steps:466 | ============================================================
+2026-01-17 15:57:55 | INFO     | print_next_steps:489 | 
+============================================================
+2026-01-17 15:57:55 | INFO     | print_next_steps:490 | 🐛 DEBUG SUMMARY
+2026-01-17 15:57:55 | INFO     | print_next_steps:491 | ============================================================
+2026-01-17 15:57:55 | INFO     | print_next_steps:492 | Debug log file: C:\Users\Gaming\Pictures\Coding_Projects\Drone\debug.log
+2026-01-17 15:57:55 | INFO     | print_next_steps:495 | 
+⏱️  Timing Summary:
+2026-01-17 15:57:55 | INFO     | print_next_steps:498 |   Path checking: 0.01s
+2026-01-17 15:57:55 | INFO     | print_next_steps:498 |   Command building: 0.00s
+2026-01-17 15:57:55 | INFO     | print_next_steps:498 |   RealityScan process: 27.93s
+2026-01-17 15:57:55 | INFO     | print_next_steps:498 |   Total execution: 30.21s
+2026-01-17 15:57:55 | INFO     | print_next_steps:500 | 
+📁 Debug files saved in: C:\Users\Gaming\Pictures\Coding_Projects\Drone
+2026-01-17 15:57:55 | INFO     | print_next_steps:501 | ============================================================
+2026-01-17 15:57:55 | INFO     | main:586 | 
+=== PHASE 5: Opening Project ===
+2026-01-17 15:57:55 | INFO     | open_project_in_gui:506 | 
+🚀 Opening project in RealityScan GUI...
+2026-01-17 15:57:55 | DEBUG    | open_project_in_gui:512 | Launching: c:\Program Files\Epic Games\RealityScan_2.1\RealityScan.exe C:\Users\Gaming\Pictures\Coding_Projects\Drone\hammer_reconstruction.rsproj
+2026-01-17 15:57:55 | INFO     | open_project_in_gui:521 | ✅ RealityScan GUI launched (PID: 71912)
+2026-01-17 15:57:55 | INFO     | open_project_in_gui:522 | 📂 Project: C:\Users\Gaming\Pictures\Coding_Projects\Drone\hammer_reconstruction.rsproj
+2026-01-17 15:57:57 | INFO     | open_project_in_gui:528 | ✅ RealityScan is running
+2026-01-17 15:57:57 | DEBUG    | save_debug_info:135 | Saved debug info to: C:\Users\Gaming\Pictures\Coding_Projects\Drone\debug_session_20260117_155757.json
+2026-01-17 15:57:57 | INFO     | main:607 | Session complete
