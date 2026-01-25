@@ -9,11 +9,13 @@
 ### 1. Configure Network (30 seconds)
 
 Edit `streaming_config.py`:
+
 ```python
 GROUND_STATION_IP = "192.168.1.28"  # Change to your Windows PC IP
 ```
 
 To find your Windows PC IP:
+
 ```bash
 ipconfig
 # Look for "IPv4 Address"
@@ -24,17 +26,20 @@ ipconfig
 ### 2. Start Ground Station (Windows PC)
 
 **Option A - Easy:**
+
 ```bash
 start_ground_station.bat
 ```
 
 **Option B - Manual:**
+
 ```bash
 pip install flask flask-cors opencv-python numpy
 python ground_station_receiver.py
 ```
 
 You should see:
+
 ```
 ✅ Running on http://0.0.0.0:5000
 ```
@@ -44,18 +49,21 @@ You should see:
 ### 3. Start Raspberry Pi Stream
 
 **Option A - Easy:**
+
 ```bash
 chmod +x start_rpi_stream.sh
 ./start_rpi_stream.sh
 ```
 
 **Option B - Manual:**
+
 ```bash
 pip3 install opencv-python requests numpy
 python3 pi_stream_client.py
 ```
 
 You should see:
+
 ```
 ✅ Camera ready: 1280x720 @ 30 FPS
 ✅ Streaming active!
@@ -67,6 +75,7 @@ You should see:
 ## 📁 Output Files
 
 Frames are automatically saved to:
+
 ```
 live_sessions/
   └── drone_live_<timestamp>/
@@ -85,42 +94,54 @@ These frames can be processed with RealityScan for 3D reconstruction!
 Edit `streaming_config.py` to optimize for your network:
 
 ### For WiFi (Balanced - Default):
+
 ```python
 FRAME_WIDTH = 1280
 FRAME_HEIGHT = 720
 JPEG_QUALITY = 85
 SKIP_FRAMES = 2
 ```
+
 **Result:** ~10 FPS, ~3.8 MB/s
 
 ### For Maximum Speed (Weak WiFi):
+
 ```python
 FRAME_WIDTH = 960
 FRAME_HEIGHT = 540
 JPEG_QUALITY = 75
 SKIP_FRAMES = 3
 ```
+
 **Result:** ~15 FPS, ~1.1 MB/s
 
 ### For Best Quality (Ethernet):
+
 ```python
 FRAME_WIDTH = 1920
 FRAME_HEIGHT = 1080
 JPEG_QUALITY = 95
 SKIP_FRAMES = 0
 ```
+
 **Result:** ~5-8 FPS, ~30 MB/s
 
 ---
 
 ## 🧪 Testing
 
-Run diagnostics:
+### Test Camera (RPi):
+```bash
+python3 camera_diagnostic.py
+```
+This will detect your camera and recommend the best settings.
+
+### Test Connection:
 ```bash
 python test_streaming.py
 ```
 
-Calculate bandwidth needs:
+### Calculate Bandwidth:
 ```bash
 python bandwidth_calculator.py
 ```
@@ -129,24 +150,43 @@ python bandwidth_calculator.py
 
 ## 🐛 Troubleshooting
 
+### "Cannot open camera" or Camera Errors
+
+**Step 1: Run camera diagnostic**
+```bash
+python3 camera_diagnostic.py
+```
+
+**Step 2: Common fixes:**
+- ✅ Check devices: `ls /dev/video*`
+- ✅ Add user to video group: `sudo usermod -a -G video $USER`
+- ✅ For RPi Camera Module:
+  - Enable in `sudo raspi-config` → Interface Options → Camera
+  - Load driver: `sudo modprobe bcm2835-v4l2`
+  - Make permanent: Add `bcm2835-v4l2` to `/etc/modules`
+- ✅ For USB camera: Check `lsusb`
+- ✅ Reboot after changes: `sudo reboot`
+
+**Step 3: Update config based on diagnostic results**
+
+Edit `streaming_config.py` with recommended CAMERA_ID
+
 ### "Connection refused"
+
 - ✅ Make sure ground station is running first
 - ✅ Check firewall (allow port 5000)
 - ✅ Verify IP in `streaming_config.py`
 - ✅ Test: `ping <ground_station_ip>`
 
-### "Cannot open camera"
-- ✅ Check camera connection: `ls /dev/video*`
-- ✅ For RPi Camera: Use `CAMERA_ID = '/dev/video0'`
-- ✅ For USB webcam: Use `CAMERA_ID = 0`
-
 ### Low FPS / Choppy
+
 - ✅ Increase `SKIP_FRAMES` (3-4)
 - ✅ Decrease `JPEG_QUALITY` (70-75)
 - ✅ Lower resolution (960x540)
 - ✅ Use Ethernet instead of WiFi
 
 ### High Latency
+
 - ✅ Reduce `BUFFER_SIZE` (3)
 - ✅ Increase `SKIP_FRAMES`
 - ✅ Check WiFi signal strength
@@ -170,6 +210,7 @@ python bandwidth_calculator.py
 ```
 
 **Why This Design?**
+
 - ✅ 4-8x FASTER than processing on RPi
 - ✅ RPi stays cool (15-25% CPU vs 85-95%)
 - ✅ Ground station has 20x more power
@@ -179,12 +220,12 @@ python bandwidth_calculator.py
 
 ## 📈 Performance Metrics
 
-| Metric | This System | RPi Processing |
-|--------|-------------|----------------|
-| **FPS** | **11-16** ⚡ | 1.5-3 🐌 |
-| **Latency** | **60-90ms** | 330-680ms |
-| **RPi CPU** | **15-25%** | 85-95% |
-| **Speed** | **4-8x FASTER** | 1x |
+| Metric      | This System     | RPi Processing |
+| ----------- | --------------- | -------------- |
+| **FPS**     | **11-16** ⚡    | 1.5-3 🐌       |
+| **Latency** | **60-90ms**     | 330-680ms      |
+| **RPi CPU** | **15-25%**      | 85-95%         |
+| **Speed**   | **4-8x FASTER** | 1x             |
 
 ---
 
@@ -197,6 +238,7 @@ python realityscan_align.py <path_to_frames_folder>
 ```
 
 Example:
+
 ```bash
 python realityscan_align.py live_sessions/drone_live_1737843600/frames
 ```
@@ -206,19 +248,23 @@ python realityscan_align.py live_sessions/drone_live_1737843600/frames
 ## 📂 Project Files
 
 ### Core System:
+
 - `pi_stream_client.py` - RPi camera capture & streaming
 - `ground_station_receiver.py` - Windows receiver & processor
 - `streaming_config.py` - Configuration (edit this!)
 
 ### Launchers:
+
 - `start_ground_station.bat` - Windows quick start
 - `start_rpi_stream.sh` - RPi quick start
 
 ### Utilities:
+
 - `test_streaming.py` - Diagnostic tests
 - `bandwidth_calculator.py` - Network calculator
 
 ### 3D Reconstruction (Existing):
+
 - `windows_server_api.py` - RealityScan processing server
 - `realityscan_align.py` - 3D reconstruction script
 - `pi_client_api.py` - Batch upload (old system)
@@ -238,6 +284,7 @@ python realityscan_align.py live_sessions/drone_live_1737843600/frames
 ## ✅ Success Criteria
 
 You're ready when:
+
 - ✅ Ground station shows "New session" message
 - ✅ RPi shows "Streaming active" with FPS counter
 - ✅ Frames are saving to `live_sessions/` folder

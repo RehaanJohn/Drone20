@@ -78,7 +78,50 @@ class FastFrameStreamer:
         """Initialize camera with optimized settings"""
         print("🎥 Initializing camera...")
         
-        self.capture = cv2.VideoCapture(CONFIG['CAMERA_ID'])
+        # Try multiple methods to open camera
+        camera_methods = [
+            # Method 1: Direct V4L2 (best for Linux/RPi)
+            (CONFIG['CAMERA_ID'], cv2.CAP_V4L2),
+            # Method 2: Auto-detect backend
+            (CONFIG['CAMERA_ID'], cv2.CAP_ANY),
+            # Method 3: Try different indices with V4L2
+            (0, cv2.CAP_V4L2),
+            (1, cv2.CAP_V4L2),
+            # Method 4: Try different indices with auto-detect
+            (0, cv2.CAP_ANY),
+            (1, cv2.CAP_ANY),
+        ]
+        
+        self.capture = None
+        for cam_id, backend in camera_methods:
+            try:
+                print(f"   Trying camera {cam_id} with backend {backend}...")
+                cap = cv2.VideoCapture(cam_id, backend)
+                
+                if cap.isOpened():
+                    # Test if we can actually read a frame
+                    ret, test_frame = cap.read()
+                    if ret and test_frame is not None:
+                        self.capture = cap
+                        print(f"   ✅ Camera opened successfully!")
+                        break
+                    else:
+                        cap.release()
+                else:
+                    cap.release()
+            except Exception as e:
+                print(f"   ❌ Failed: {e}")
+                continue
+        
+        if self.capture is None or not self.capture.isOpened():
+            print("\n❌ Could not open camera!")
+            print("\n💡 Troubleshooting:")
+            print("   1. Check connected cameras: ls /dev/video*")
+            print("   2. Check permissions: sudo usermod -a -G video $USER")
+            print("   3. For RPi Camera Module: Enable in raspi-config")
+            print("   4. Try: sudo modprobe bcm2835-v4l2")
+            print("   5. Edit streaming_config.py to set CAMERA_ID")
+            raise RuntimeError("Failed to open camera")
         
         # Set camera properties for maximum performance
         self.capture.set(cv2.CAP_PROP_FRAME_WIDTH, CONFIG['FRAME_WIDTH'])
@@ -86,15 +129,21 @@ class FastFrameStreamer:
         self.capture.set(cv2.CAP_PROP_FPS, CONFIG['FPS'])
         self.capture.set(cv2.CAP_PROP_BUFFERSIZE, 1)  # Minimize buffer for low latency
         
-        # Verify settings
+        # Verify actual settings
         actual_width = int(self.capture.get(cv2.CAP_PROP_FRAME_WIDTH))
         actual_height = int(self.capture.get(cv2.CAP_PROP_FRAME_HEIGHT))
         actual_fps = int(self.capture.get(cv2.CAP_PROP_FPS))
         
-        print(f"✅ Camera ready: {actual_width}x{actual_height} @ {actual_fps} FPS")
+        # Validate we got reasonable values
+        if actual_width == 0 or actual_height == 0:
+            print("⚠️  Warning: Could not set resolution, using camera defaults")
+            # Try to read a frame to get actual resolution
+            ret, frame = self.capture.read()
+            if ret and frame is not None:
+                actual_height, actual_width = frame.shape[:2]
+                print(f"   Detected resolution: {actual_width}x{actual_height}")
         
-        if not self.capture.isOpened():
-            raise RuntimeError("Failed to open camera")
+        print(f"✅ Camera ready: {actual_width}x{actual_height} @ {actual_fps} FPS")
     
     def capture_thread(self):
         """Capture frames continuously (runs in separate thread)"""
