@@ -236,3 +236,14 @@
 2026-01-25 17:32:57,329 | INFO | 192.168.1.33 - - [25/Jan/2026 17:32:57] "GET /api/process/status/bd4d9410-8e21-4124-b6ae-36b8657bc0b2 HTTP/1.1" 200 -
 2026-01-25 17:32:57,470 | INFO | Sending result file for job bd4d9410-8e21-4124-b6ae-36b8657bc0b2: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260125_172504\drone_scan_20260125_172504_result.zip
 2026-01-25 17:32:57,482 | INFO | 192.168.1.33 - - [25/Jan/2026 17:32:57] "GET /api/process/download/bd4d9410-8e21-4124-b6ae-36b8657bc0b2 HTTP/1.1" 200 -
+2026-01-25 17:56:48,348 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads
+2026-01-25 17:56:48,350 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects
+2026-01-25 17:56:48,350 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results
+2026-01-25 17:56:48,350 | INFO | ✅ RealityScan found: c:\Program Files\Epic Games\RealityScan_2.1\RealityScan.exe
+2026-01-25 17:56:49,231 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.18:5000
+2026-01-25 17:56:49,231 | INFO | [33mPress CTRL+C to quit[0m
+2026-01-25 19:15:17,230 | INFO | 127.0.0.1 - - [25/Jan/2026 19:15:17] "GET /api/health HTTP/1.1" 200 -
+2026-01-25 19:15:17,565 | INFO | 127.0.0.1 - - [25/Jan/2026 19:15:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
