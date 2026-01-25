@@ -1,0 +1,238 @@
+2026-01-24 15:22:59,595 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads
+2026-01-24 15:22:59,596 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects
+2026-01-24 15:22:59,596 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results
+2026-01-24 15:23:00,520 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2026-01-24 15:23:00,521 | INFO | [33mPress CTRL+C to quit[0m
+2026-01-24 15:23:00,986 | INFO | 127.0.0.1 - - [24/Jan/2026 15:23:00] "[33mFOO / HTTP/1.1[0m" 404 -
+2026-01-24 15:36:47,848 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads
+2026-01-24 15:36:47,848 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects
+2026-01-24 15:36:47,848 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results
+2026-01-24 15:36:48,910 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.2:5000
+2026-01-24 15:36:48,911 | INFO | [33mPress CTRL+C to quit[0m
+2026-01-24 15:38:16,577 | INFO | 127.0.0.1 - - [24/Jan/2026 15:38:16] "GET /api/health HTTP/1.1" 200 -
+2026-01-24 15:38:16,991 | INFO | 127.0.0.1 - - [24/Jan/2026 15:38:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-24 15:45:45,721 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads
+2026-01-24 15:45:45,722 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects
+2026-01-24 15:45:45,722 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results
+2026-01-24 15:45:46,739 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2026-01-24 15:45:46,739 | INFO | [33mPress CTRL+C to quit[0m
+2026-01-24 15:50:10,644 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads
+2026-01-24 15:50:10,644 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects
+2026-01-24 15:50:10,644 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results
+2026-01-24 15:50:11,531 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2026-01-24 15:50:11,531 | INFO | [33mPress CTRL+C to quit[0m
+2026-01-24 15:53:06,542 | INFO | Received upload request for project drone_scan_20260124_155026, batch 1/2
+2026-01-24 15:53:06,812 | INFO | Saved batch 1 to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260124_155026\batch_1.zip
+2026-01-24 15:53:06,812 | INFO | Extracting C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260124_155026\batch_1.zip to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260124_155026\images
+2026-01-24 15:53:07,475 | INFO | Extracted 50 images
+2026-01-24 15:53:07,479 | INFO | 192.168.1.33 - - [24/Jan/2026 15:53:07] "POST /api/process/upload HTTP/1.1" 200 -
+2026-01-24 15:55:09,837 | INFO | Received upload request for project drone_scan_20260124_155026, batch 2/2
+2026-01-24 15:55:10,176 | INFO | Saved batch 2 to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260124_155026\batch_2.zip
+2026-01-24 15:55:10,177 | INFO | Extracting C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260124_155026\batch_2.zip to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260124_155026\images
+2026-01-24 15:55:10,657 | INFO | Extracted 89 images
+2026-01-24 15:55:10,669 | INFO | 192.168.1.33 - - [24/Jan/2026 15:55:10] "POST /api/process/upload HTTP/1.1" 200 -
+2026-01-24 15:55:10,819 | INFO | Starting processing for project drone_scan_20260124_155026, quality=high
+2026-01-24 15:55:10,820 | INFO | Job d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e: processing (10%) - Preparing RealityScan...
+2026-01-24 15:55:10,820 | INFO | Started processing thread for job d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e
+2026-01-24 15:55:10,820 | INFO | Executing RealityScan: c:\Program Files\Epic Games\RealityScan_2.1\RealityScan.exe -headless -newScene -addFolder C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260124_155026\images\ -detectFeatures -align -selectMaximalComponent -save C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects\drone_scan_20260124_155026.rsproj -quit
+2026-01-24 15:55:10,821 | INFO | 192.168.1.33 - - [24/Jan/2026 15:55:10] "POST /api/process/start HTTP/1.1" 200 -
+2026-01-24 15:55:10,821 | INFO | Job d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e: processing (20%) - Running feature detection...
+2026-01-24 15:55:10,833 | INFO | 192.168.1.33 - - [24/Jan/2026 15:55:10] "GET /api/process/status/d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e HTTP/1.1" 200 -
+2026-01-24 15:55:11,052 | INFO | Job d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e: processing (40%) - Aligning images...
+2026-01-24 15:55:20,937 | INFO | 192.168.1.33 - - [24/Jan/2026 15:55:20] "GET /api/process/status/d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e HTTP/1.1" 200 -
+2026-01-24 15:55:31,258 | INFO | 192.168.1.33 - - [24/Jan/2026 15:55:31] "GET /api/process/status/d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e HTTP/1.1" 200 -
+2026-01-24 15:55:41,413 | INFO | 192.168.1.33 - - [24/Jan/2026 15:55:41] "GET /api/process/status/d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e HTTP/1.1" 200 -
+2026-01-24 15:55:51,557 | INFO | 192.168.1.33 - - [24/Jan/2026 15:55:51] "GET /api/process/status/d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e HTTP/1.1" 200 -
+2026-01-24 15:55:56,912 | INFO | RealityScan return code: 0
+2026-01-24 15:55:56,912 | INFO | Job d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e: processing (80%) - Creating output package...
+2026-01-24 15:55:56,913 | INFO | Packaging results to: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260124_155026\drone_scan_20260124_155026_result.zip
+2026-01-24 15:55:56,914 | INFO | Added project file: drone_scan_20260124_155026.rsproj
+2026-01-24 15:55:56,915 | INFO | Added: drone_scan_20260124_155026\animation0.dat
+2026-01-24 15:55:56,915 | INFO | Added: drone_scan_20260124_155026\appConfig0.dat
+2026-01-24 15:55:56,916 | INFO | Added: drone_scan_20260124_155026\controlpoints0.dat
+2026-01-24 15:55:56,916 | INFO | Added: drone_scan_20260124_155026\entities0.dat
+2026-01-24 15:55:56,916 | INFO | Added: drone_scan_20260124_155026\metadata0.dat
+2026-01-24 15:55:57,370 | INFO | Added: drone_scan_20260124_155026\sfm0.dat
+2026-01-24 15:55:57,370 | INFO | Result package created: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260124_155026\drone_scan_20260124_155026_result.zip
+2026-01-24 15:55:57,370 | INFO | Job d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e: completed (100%) - Processing complete
+2026-01-24 15:55:57,371 | INFO | Job d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e completed successfully
+2026-01-24 15:56:01,606 | INFO | 192.168.1.33 - - [24/Jan/2026 15:56:01] "GET /api/process/status/d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e HTTP/1.1" 200 -
+2026-01-24 15:56:01,641 | INFO | Sending result file for job d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260124_155026\drone_scan_20260124_155026_result.zip
+2026-01-24 15:56:01,652 | INFO | 192.168.1.33 - - [24/Jan/2026 15:56:01] "GET /api/process/download/d7e9110b-fc74-4d1c-b2f0-89f717fbaf6e HTTP/1.1" 200 -
+2026-01-25 02:32:27,761 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads
+2026-01-25 02:32:27,762 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects
+2026-01-25 02:32:27,762 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results
+2026-01-25 02:32:28,682 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2026-01-25 02:32:28,682 | INFO | [33mPress CTRL+C to quit[0m
+2026-01-25 02:37:03,411 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads
+2026-01-25 02:37:03,411 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects
+2026-01-25 02:37:03,411 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results
+2026-01-25 02:37:04,298 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2026-01-25 02:37:04,298 | INFO | [33mPress CTRL+C to quit[0m
+2026-01-25 03:06:27,918 | INFO | Received upload request for project drone_scan_20260125_030433, batch 1/2
+2026-01-25 03:06:28,258 | INFO | Saved batch 1 to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_030433\batch_1.zip
+2026-01-25 03:06:28,259 | INFO | Extracting C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_030433\batch_1.zip to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_030433\images
+2026-01-25 03:06:28,921 | INFO | Extracted 50 images
+2026-01-25 03:06:28,930 | INFO | 192.168.1.33 - - [25/Jan/2026 03:06:28] "POST /api/process/upload HTTP/1.1" 200 -
+2026-01-25 03:08:03,746 | INFO | Received upload request for project drone_scan_20260125_030433, batch 2/2
+2026-01-25 03:08:04,064 | INFO | Saved batch 2 to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_030433\batch_2.zip
+2026-01-25 03:08:04,065 | INFO | Extracting C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_030433\batch_2.zip to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_030433\images
+2026-01-25 03:08:04,564 | INFO | Extracted 89 images
+2026-01-25 03:08:04,566 | INFO | 192.168.1.33 - - [25/Jan/2026 03:08:04] "POST /api/process/upload HTTP/1.1" 200 -
+2026-01-25 03:08:04,710 | INFO | Starting processing for project drone_scan_20260125_030433, quality=high
+2026-01-25 03:08:04,711 | INFO | Job b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf: processing (10%) - Preparing RealityScan...
+2026-01-25 03:08:04,711 | INFO | Started processing thread for job b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf
+2026-01-25 03:08:04,711 | INFO | Executing RealityScan command:
+2026-01-25 03:08:04,711 | INFO | 192.168.1.33 - - [25/Jan/2026 03:08:04] "POST /api/process/start HTTP/1.1" 200 -
+2026-01-25 03:08:04,711 | INFO |   "c:\Program Files\Epic Games\RealityScan_2.1\RealityScan.exe" -headless -newScene -addFolder C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_030433\images\ -detectFeatures -align -selectMaximalComponent -save C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects\drone_scan_20260125_030433.rsproj -quit
+2026-01-25 03:08:04,712 | INFO | Job b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf: processing (20%) - Running feature detection...
+2026-01-25 03:08:04,723 | INFO | RealityScan started (PID: 146180)
+2026-01-25 03:08:04,723 | INFO | Job b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf: processing (40%) - Aligning images...
+2026-01-25 03:08:04,725 | INFO | 192.168.1.33 - - [25/Jan/2026 03:08:04] "GET /api/process/status/b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf HTTP/1.1" 200 -
+2026-01-25 03:08:14,778 | INFO | 192.168.1.33 - - [25/Jan/2026 03:08:14] "GET /api/process/status/b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf HTTP/1.1" 200 -
+2026-01-25 03:08:24,861 | INFO | 192.168.1.33 - - [25/Jan/2026 03:08:24] "GET /api/process/status/b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf HTTP/1.1" 200 -
+2026-01-25 03:08:34,898 | INFO | 192.168.1.33 - - [25/Jan/2026 03:08:34] "GET /api/process/status/b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf HTTP/1.1" 200 -
+2026-01-25 03:08:44,922 | INFO | 192.168.1.33 - - [25/Jan/2026 03:08:44] "GET /api/process/status/b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf HTTP/1.1" 200 -
+2026-01-25 03:08:46,473 | INFO | RealityScan return code: 0
+2026-01-25 03:08:46,474 | INFO | Project file size: 15953 bytes (15.58 KB)
+2026-01-25 03:08:46,500 | INFO | Job b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf: processing (80%) - Creating output package...
+2026-01-25 03:08:46,501 | INFO | Packaging results to: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260125_030433\drone_scan_20260125_030433_result.zip
+2026-01-25 03:08:46,503 | INFO | Added project file: drone_scan_20260125_030433.rsproj
+2026-01-25 03:08:46,503 | INFO | Added: drone_scan_20260125_030433\animation0.dat
+2026-01-25 03:08:46,504 | INFO | Added: drone_scan_20260125_030433\appConfig0.dat
+2026-01-25 03:08:46,504 | INFO | Added: drone_scan_20260125_030433\controlpoints0.dat
+2026-01-25 03:08:46,504 | INFO | Added: drone_scan_20260125_030433\entities0.dat
+2026-01-25 03:08:46,505 | INFO | Added: drone_scan_20260125_030433\metadata0.dat
+2026-01-25 03:08:46,945 | INFO | Added: drone_scan_20260125_030433\sfm0.dat
+2026-01-25 03:08:46,945 | INFO | Result package created: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260125_030433\drone_scan_20260125_030433_result.zip
+2026-01-25 03:08:46,945 | INFO | Job b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf: completed (100%) - Processing complete - 3D mesh ready for download
+2026-01-25 03:08:54,953 | INFO | 192.168.1.33 - - [25/Jan/2026 03:08:54] "GET /api/process/status/b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf HTTP/1.1" 200 -
+2026-01-25 03:08:54,973 | INFO | Sending result file for job b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260125_030433\drone_scan_20260125_030433_result.zip
+2026-01-25 03:08:54,986 | INFO | 192.168.1.33 - - [25/Jan/2026 03:08:54] "GET /api/process/download/b9ef4ff3-0f54-4467-b191-b3ddccfbdfbf HTTP/1.1" 200 -
+2026-01-25 16:42:18,092 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads
+2026-01-25 16:42:18,092 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects
+2026-01-25 16:42:18,093 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results
+2026-01-25 16:42:18,093 | INFO | ✅ RealityScan found: c:\Program Files\Epic Games\RealityScan_2.1\RealityScan.exe
+2026-01-25 16:42:19,423 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2026-01-25 16:42:19,424 | INFO | [33mPress CTRL+C to quit[0m
+2026-01-25 16:42:39,206 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads
+2026-01-25 16:42:39,206 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects
+2026-01-25 16:42:39,206 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results
+2026-01-25 16:42:39,206 | INFO | ✅ RealityScan found: c:\Program Files\Epic Games\RealityScan_2.1\RealityScan.exe
+2026-01-25 16:42:40,137 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2026-01-25 16:42:40,137 | INFO | [33mPress CTRL+C to quit[0m
+2026-01-25 16:49:01,182 | INFO | Received upload request for project drone_scan_20260125_164425, batch 1/2
+2026-01-25 16:49:01,456 | INFO | Saved batch 1 to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_164425\batch_1.zip
+2026-01-25 16:49:01,456 | INFO | Extracting C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_164425\batch_1.zip to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_164425\images
+2026-01-25 16:49:02,077 | INFO | Extracted 50 images
+2026-01-25 16:49:02,093 | INFO | 192.168.1.33 - - [25/Jan/2026 16:49:02] "POST /api/process/upload HTTP/1.1" 200 -
+2026-01-25 16:52:19,795 | INFO | Received upload request for project drone_scan_20260125_164425, batch 2/2
+2026-01-25 16:52:20,018 | INFO | Saved batch 2 to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_164425\batch_2.zip
+2026-01-25 16:52:20,018 | INFO | Extracting C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_164425\batch_2.zip to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_164425\images
+2026-01-25 16:52:20,493 | INFO | Extracted 89 images
+2026-01-25 16:52:20,505 | INFO | 192.168.1.33 - - [25/Jan/2026 16:52:20] "POST /api/process/upload HTTP/1.1" 200 -
+2026-01-25 16:52:20,701 | INFO | Starting processing for project drone_scan_20260125_164425, quality=high
+2026-01-25 16:52:20,701 | INFO | Job a435ebb8-e0a0-4b10-9cd7-9bc895f669aa: processing (10%) - Preparing RealityScan...
+2026-01-25 16:52:20,702 | INFO | Started processing thread for job a435ebb8-e0a0-4b10-9cd7-9bc895f669aa
+2026-01-25 16:52:20,702 | INFO | Executing RealityScan command:
+2026-01-25 16:52:20,702 | INFO | 192.168.1.33 - - [25/Jan/2026 16:52:20] "POST /api/process/start HTTP/1.1" 200 -
+2026-01-25 16:52:20,702 | INFO |   "c:\Program Files\Epic Games\RealityScan_2.1\RealityScan.exe" -headless -newScene -addFolder C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_164425\images\ -detectFeatures -align -selectMaximalComponent -save C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects\drone_scan_20260125_164425.rsproj -quit
+2026-01-25 16:52:20,702 | INFO | Job a435ebb8-e0a0-4b10-9cd7-9bc895f669aa: processing (20%) - Running feature detection...
+2026-01-25 16:52:20,706 | INFO | RealityScan started (PID: 29440)
+2026-01-25 16:52:20,706 | INFO | Job a435ebb8-e0a0-4b10-9cd7-9bc895f669aa: processing (40%) - Aligning images...
+2026-01-25 16:52:20,805 | INFO | 192.168.1.33 - - [25/Jan/2026 16:52:20] "GET /api/process/status/a435ebb8-e0a0-4b10-9cd7-9bc895f669aa HTTP/1.1" 200 -
+2026-01-25 16:52:30,947 | INFO | 192.168.1.33 - - [25/Jan/2026 16:52:30] "GET /api/process/status/a435ebb8-e0a0-4b10-9cd7-9bc895f669aa HTTP/1.1" 200 -
+2026-01-25 16:52:41,055 | INFO | 192.168.1.33 - - [25/Jan/2026 16:52:41] "GET /api/process/status/a435ebb8-e0a0-4b10-9cd7-9bc895f669aa HTTP/1.1" 200 -
+2026-01-25 16:52:51,540 | INFO | 192.168.1.33 - - [25/Jan/2026 16:52:51] "GET /api/process/status/a435ebb8-e0a0-4b10-9cd7-9bc895f669aa HTTP/1.1" 200 -
+2026-01-25 16:52:59,765 | INFO | RealityScan return code: 0
+2026-01-25 16:52:59,765 | INFO | Project file size: 15953 bytes (15.58 KB)
+2026-01-25 16:52:59,766 | INFO | ✅ Found 1 SfM data files - alignment successful!
+2026-01-25 16:52:59,766 | INFO | Job a435ebb8-e0a0-4b10-9cd7-9bc895f669aa: processing (80%) - Creating output package...
+2026-01-25 16:52:59,766 | INFO | Packaging results to: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260125_164425\drone_scan_20260125_164425_result.zip
+2026-01-25 16:52:59,767 | INFO | Added project file: drone_scan_20260125_164425.rsproj
+2026-01-25 16:52:59,768 | INFO | Added: drone_scan_20260125_164425\animation0.dat
+2026-01-25 16:52:59,768 | INFO | Added: drone_scan_20260125_164425\appConfig0.dat
+2026-01-25 16:52:59,768 | INFO | Added: drone_scan_20260125_164425\controlpoints0.dat
+2026-01-25 16:52:59,768 | INFO | Added: drone_scan_20260125_164425\entities0.dat
+2026-01-25 16:52:59,770 | INFO | Added: drone_scan_20260125_164425\metadata0.dat
+2026-01-25 16:53:00,245 | INFO | Added: drone_scan_20260125_164425\sfm0.dat
+2026-01-25 16:53:00,245 | INFO | Result package created: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260125_164425\drone_scan_20260125_164425_result.zip
+2026-01-25 16:53:00,245 | INFO | Job a435ebb8-e0a0-4b10-9cd7-9bc895f669aa: completed (100%) - Processing complete - 3D mesh ready for download
+2026-01-25 16:53:00,245 | INFO | ✅ Job a435ebb8-e0a0-4b10-9cd7-9bc895f669aa completed successfully
+2026-01-25 16:53:01,724 | INFO | 192.168.1.33 - - [25/Jan/2026 16:53:01] "GET /api/process/status/a435ebb8-e0a0-4b10-9cd7-9bc895f669aa HTTP/1.1" 200 -
+2026-01-25 16:53:01,838 | INFO | Sending result file for job a435ebb8-e0a0-4b10-9cd7-9bc895f669aa: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260125_164425\drone_scan_20260125_164425_result.zip
+2026-01-25 16:53:01,850 | INFO | 192.168.1.33 - - [25/Jan/2026 16:53:01] "GET /api/process/download/a435ebb8-e0a0-4b10-9cd7-9bc895f669aa HTTP/1.1" 200 -
+2026-01-25 17:24:42,920 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads
+2026-01-25 17:24:42,920 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects
+2026-01-25 17:24:42,920 | INFO | Directory ready: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results
+2026-01-25 17:24:42,920 | INFO | ✅ RealityScan found: c:\Program Files\Epic Games\RealityScan_2.1\RealityScan.exe
+2026-01-25 17:24:43,869 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2026-01-25 17:24:43,870 | INFO | [33mPress CTRL+C to quit[0m
+2026-01-25 17:28:48,514 | INFO | Received upload request for project drone_scan_20260125_172504, batch 1/2
+2026-01-25 17:28:48,790 | INFO | Saved batch 1 to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_172504\batch_1.zip
+2026-01-25 17:28:48,791 | INFO | Extracting C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_172504\batch_1.zip to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_172504\images
+2026-01-25 17:28:49,412 | INFO | Extracted 50 images
+2026-01-25 17:28:49,428 | INFO | 192.168.1.33 - - [25/Jan/2026 17:28:49] "POST /api/process/upload HTTP/1.1" 200 -
+2026-01-25 17:32:15,806 | INFO | Received upload request for project drone_scan_20260125_172504, batch 2/2
+2026-01-25 17:32:16,049 | INFO | Saved batch 2 to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_172504\batch_2.zip
+2026-01-25 17:32:16,049 | INFO | Extracting C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_172504\batch_2.zip to C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_172504\images
+2026-01-25 17:32:16,512 | INFO | Extracted 89 images
+2026-01-25 17:32:16,524 | INFO | 192.168.1.33 - - [25/Jan/2026 17:32:16] "POST /api/process/upload HTTP/1.1" 200 -
+2026-01-25 17:32:16,722 | INFO | Starting processing for project drone_scan_20260125_172504, quality=high
+2026-01-25 17:32:16,722 | INFO | Job bd4d9410-8e21-4124-b6ae-36b8657bc0b2: processing (10%) - Preparing RealityScan...
+2026-01-25 17:32:16,723 | INFO | Started processing thread for job bd4d9410-8e21-4124-b6ae-36b8657bc0b2
+2026-01-25 17:32:16,723 | INFO | Executing RealityScan command:
+2026-01-25 17:32:16,723 | INFO | 192.168.1.33 - - [25/Jan/2026 17:32:16] "POST /api/process/start HTTP/1.1" 200 -
+2026-01-25 17:32:16,723 | INFO |   "c:\Program Files\Epic Games\RealityScan_2.1\RealityScan.exe" -headless -newScene -addFolder C:\Users\Gaming\Pictures\Coding_Projects\Drone\uploads\drone_scan_20260125_172504\images\ -detectFeatures -align -selectMaximalComponent -save C:\Users\Gaming\Pictures\Coding_Projects\Drone\projects\drone_scan_20260125_172504.rsproj -quit
+2026-01-25 17:32:16,723 | INFO | Job bd4d9410-8e21-4124-b6ae-36b8657bc0b2: processing (20%) - Running feature detection...
+2026-01-25 17:32:16,727 | INFO | RealityScan started (PID: 26464)
+2026-01-25 17:32:16,727 | INFO | Job bd4d9410-8e21-4124-b6ae-36b8657bc0b2: processing (40%) - Aligning images...
+2026-01-25 17:32:16,828 | INFO | 192.168.1.33 - - [25/Jan/2026 17:32:16] "GET /api/process/status/bd4d9410-8e21-4124-b6ae-36b8657bc0b2 HTTP/1.1" 200 -
+2026-01-25 17:32:26,952 | INFO | 192.168.1.33 - - [25/Jan/2026 17:32:26] "GET /api/process/status/bd4d9410-8e21-4124-b6ae-36b8657bc0b2 HTTP/1.1" 200 -
+2026-01-25 17:32:37,101 | INFO | 192.168.1.33 - - [25/Jan/2026 17:32:37] "GET /api/process/status/bd4d9410-8e21-4124-b6ae-36b8657bc0b2 HTTP/1.1" 200 -
+2026-01-25 17:32:47,169 | INFO | 192.168.1.33 - - [25/Jan/2026 17:32:47] "GET /api/process/status/bd4d9410-8e21-4124-b6ae-36b8657bc0b2 HTTP/1.1" 200 -
+2026-01-25 17:32:54,643 | INFO | RealityScan return code: 0
+2026-01-25 17:32:54,643 | INFO | Project file size: 15953 bytes (15.58 KB)
+2026-01-25 17:32:54,644 | INFO | ✅ Found 1 SfM data files - alignment successful!
+2026-01-25 17:32:54,644 | INFO | Job bd4d9410-8e21-4124-b6ae-36b8657bc0b2: processing (80%) - Creating output package...
+2026-01-25 17:32:54,644 | INFO | Packaging results to: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260125_172504\drone_scan_20260125_172504_result.zip
+2026-01-25 17:32:54,645 | INFO | Added project file: drone_scan_20260125_172504.rsproj
+2026-01-25 17:32:54,645 | INFO | Added: drone_scan_20260125_172504\animation0.dat
+2026-01-25 17:32:54,646 | INFO | Added: drone_scan_20260125_172504\appConfig0.dat
+2026-01-25 17:32:54,646 | INFO | Added: drone_scan_20260125_172504\controlpoints0.dat
+2026-01-25 17:32:54,646 | INFO | Added: drone_scan_20260125_172504\entities0.dat
+2026-01-25 17:32:54,647 | INFO | Added: drone_scan_20260125_172504\metadata0.dat
+2026-01-25 17:32:55,127 | INFO | Added: drone_scan_20260125_172504\sfm0.dat
+2026-01-25 17:32:55,127 | INFO | Result package created: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260125_172504\drone_scan_20260125_172504_result.zip
+2026-01-25 17:32:55,127 | INFO | Job bd4d9410-8e21-4124-b6ae-36b8657bc0b2: completed (100%) - Processing complete - 3D mesh ready for download
+2026-01-25 17:32:55,127 | INFO | ✅ Job bd4d9410-8e21-4124-b6ae-36b8657bc0b2 completed successfully
+2026-01-25 17:32:57,329 | INFO | 192.168.1.33 - - [25/Jan/2026 17:32:57] "GET /api/process/status/bd4d9410-8e21-4124-b6ae-36b8657bc0b2 HTTP/1.1" 200 -
+2026-01-25 17:32:57,470 | INFO | Sending result file for job bd4d9410-8e21-4124-b6ae-36b8657bc0b2: C:\Users\Gaming\Pictures\Coding_Projects\Drone\results\drone_scan_20260125_172504\drone_scan_20260125_172504_result.zip
+2026-01-25 17:32:57,482 | INFO | 192.168.1.33 - - [25/Jan/2026 17:32:57] "GET /api/process/download/bd4d9410-8e21-4124-b6ae-36b8657bc0b2 HTTP/1.1" 200 -

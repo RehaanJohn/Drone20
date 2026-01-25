@@ -1,4 +1,4 @@
-<RealityScan version="2.1.0.119011" sceneRevision="5" sceneId="{CAC587C5-6C37-44AA-8E37-048640DFAFFF}">
+<RealityScan version="2.1.0.119011" sceneRevision="5" sceneId="{46FA4A60-5959-4255-A871-C11E86372578}">
     <certificates>
     </certificates>
     <coordinates>
@@ -95,13 +95,13 @@
         <input fileName="Images\IMG_1640.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
         <input fileName="Images\IMG_1641.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
     </source>
-    <reconstructions selectedComponentId="{5EB2E2C6-9AB2-4D95-8E8D-C9A45CFF7564}">
-        <component name="Component 0" id="{5EB2E2C6-9AB2-4D95-8E8D-C9A45CFF7564}" classId="{21845778-D8E3-435C-9493-2E39FEE10F29}" fileName="hammer_reconstruction\sfm2.dat" selectedModel="-1" sfmVisible="1"> 
-            <metadata fileName="hammer_reconstruction\metadata2.dat"/>
+    <reconstructions selectedComponentId="{3D762DA9-180A-4804-A651-83B0F14BAD7F}">
+        <component name="Component 0" id="{3D762DA9-180A-4804-A651-83B0F14BAD7F}" classId="{21845778-D8E3-435C-9493-2E39FEE10F29}" fileName="hammer_reconstruction\sfm1.dat" selectedModel="-1" sfmVisible="1"> 
+            <metadata fileName="hammer_reconstruction\metadata1.dat"/>
         </component>
     </reconstructions>
-    <entities name="entities" fileName="hammer_reconstruction\entities2.dat"/>
-    <animation fileName="hammer_reconstruction\animation2.dat"/>
-    <controlpoints fileName="hammer_reconstruction\controlpoints2.dat"/>
-    <appConfig fileName="hammer_reconstruction\appConfig2.dat" />
+    <entities name="entities" fileName="hammer_reconstruction\entities1.dat"/>
+    <animation fileName="hammer_reconstruction\animation1.dat"/>
+    <controlpoints fileName="hammer_reconstruction\controlpoints1.dat"/>
+    <appConfig fileName="hammer_reconstruction\appConfig1.dat" />
 </RealityScan>

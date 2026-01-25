@@ -17,6 +17,7 @@ from datetime import datetime
 import logging
 import json
 import uuid
+import sys
 
 # ============================================================================
 # CONFIGURATION
@@ -47,16 +48,24 @@ app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = CONFIG['MAX_UPLOAD_SIZE']
 CORS(app)  # Enable CORS for cross-origin requests
 
-# Setup logging
+# Setup logging with UTF-8 encoding (fixes emoji errors)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s | %(levelname)s | %(message)s',
     handlers=[
-        logging.FileHandler(os.path.join(CONFIG['BASE_DIR'], 'server.log')),
+        logging.FileHandler(os.path.join(CONFIG['BASE_DIR'], 'server.log'), encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
 logger = logging.getLogger(__name__)
+
+# Fix console encoding for Windows
+if sys.platform == 'win32':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass  # Python < 3.7
 
 # Job tracking
 jobs = {}
@@ -112,73 +121,151 @@ def extract_zip(zip_path, extract_to):
 
 
 def run_realityscan(project_id, images_folder, job_id):
-    """Run RealityScan processing in background thread"""
+    """Run RealityScan processing in background thread - MATCHES realityscan_align.py"""
     
     try:
         update_job_status(job_id, 'processing', 10, 'Preparing RealityScan...')
         
-        # Ensure images folder has trailing backslash
+        # Ensure images folder has trailing backslash (IMPORTANT for RealityScan)
         if not images_folder.endswith('\\'):
             images_folder += '\\'
         
         # Output project file
         project_file = os.path.join(CONFIG['PROJECTS_DIR'], f"{project_id}.rsproj")
         
-        # Build command
-        commands = [
-            CONFIG['REALITYSCAN_EXE'],
-            '-headless',
-            '-newScene',
-            '-addFolder', images_folder,
-            '-detectFeatures',
-            '-align',
-            '-selectMaximalComponent',
-            '-save', project_file,
-            '-quit'
-        ]
+        # Build command - EXACT same structure as realityscan_align.py
+        commands = []
         
-        logger.info(f"Executing RealityScan: {' '.join(commands)}")
+        # Create new scene
+        commands.append('-headless')
+        commands.append('-newScene')
+        
+        # Add images from folder (with trailing backslash)
+        commands.extend(['-addFolder', images_folder])
+        
+        # Detect features (recommended)
+        commands.append('-detectFeatures')
+        
+        # Align images (full quality, not draft)
+        commands.append('-align')
+        
+        # Select the best component
+        commands.append('-selectMaximalComponent')
+        
+        # Save project
+        commands.extend(['-save', project_file])
+        
+        # Quit
+        commands.append('-quit')
+        
+        # Build command list - EXACT same as realityscan_align.py
+        cmd_list = [CONFIG['REALITYSCAN_EXE']] + commands
+        
+        # For display purposes, show the command string
+        display_parts = [f'"{CONFIG["REALITYSCAN_EXE"]}"']
+        for cmd in commands:
+            if ' ' in cmd and not cmd.startswith('-'):
+                display_parts.append(f'"{cmd}"')
+            else:
+                display_parts.append(cmd)
+        display_command = ' '.join(display_parts)
+        
+        logger.info(f"Executing RealityScan command:")
+        logger.info(f"  {display_command}")
+        
         update_job_status(job_id, 'processing', 20, 'Running feature detection...')
         
-        # Execute RealityScan
+        # Execute RealityScan - EXACT same method as realityscan_align.py
         process = subprocess.Popen(
-            commands,
+            cmd_list,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
-            text=True
+            text=True,
+            bufsize=1,
+            universal_newlines=True
         )
         
+        logger.info(f"RealityScan started (PID: {process.pid})")
         update_job_status(job_id, 'processing', 40, 'Aligning images...')
         
-        # Wait for completion
-        stdout, stderr = process.communicate(timeout=3600)
+        # Wait for completion - EXACT same as realityscan_align.py
+        try:
+            stdout, stderr = process.communicate(timeout=3600)  # 1 hour timeout
+            
+            # Log output for debugging
+            if stdout:
+                stdout_lines = stdout.split('\n')
+                logger.debug(f"STDOUT ({len(stdout_lines)} lines):")
+                for line in stdout_lines:
+                    if line.strip():
+                        logger.debug(f"  OUT: {line}")
+            
+            if stderr:
+                stderr_lines = stderr.split('\n')
+                logger.debug(f"STDERR ({len(stderr_lines)} lines):")
+                for line in stderr_lines:
+                    if line.strip():
+                        logger.debug(f"  ERR: {line}")
+        
+        except subprocess.TimeoutExpired:
+            logger.error(f"Job {job_id} timeout (1 hour exceeded)")
+            process.kill()
+            update_job_status(job_id, 'failed', 0, 'Processing timeout (1 hour)')
+            return
         
         logger.info(f"RealityScan return code: {process.returncode}")
         
-        if process.returncode == 0 and os.path.exists(project_file):
-            update_job_status(job_id, 'processing', 80, 'Creating output package...')
+        # Check return code - EXACT same as realityscan_align.py
+        if process.returncode != 0:
+            error_msg = f"RealityScan failed with return code {process.returncode}"
+            if stderr:
+                error_msg += f" - Check logs for details"
+            logger.error(error_msg)
+            update_job_status(job_id, 'failed', 0, error_msg)
+            return
+        
+        # Check if project file was created - EXACT same as realityscan_align.py
+        if not os.path.exists(project_file):
+            logger.error("Project file was not created")
+            update_job_status(job_id, 'failed', 0, 'RealityScan did not create project file')
+            return
+        
+        # Verify project file has content
+        file_size = os.path.getsize(project_file)
+        logger.info(f"Project file size: {file_size} bytes ({file_size/1024:.2f} KB)")
+        
+        # Check for project data folder - EXACT same as realityscan_align.py
+        project_data_folder = project_file.replace('.rsproj', '')
+        if not os.path.exists(project_data_folder):
+            logger.warning(f"Project data folder not found: {project_data_folder}")
+            logger.warning("Alignment may have failed - no point cloud generated")
+            update_job_status(job_id, 'failed', 0, 'Alignment failed - no point cloud generated')
+            return
+        
+        # Check for critical SfM files - EXACT same as realityscan_align.py
+        sfm_files = list(Path(project_data_folder).glob('sfm*.dat'))
+        if len(sfm_files) == 0:
+            logger.error("No SfM data files found - alignment failed")
+            update_job_status(job_id, 'failed', 0, 'Alignment failed - insufficient feature matches')
+            return
+        
+        logger.info(f"✅ Found {len(sfm_files)} SfM data files - alignment successful!")
+        
+        update_job_status(job_id, 'processing', 80, 'Creating output package...')
+        
+        # Package results
+        result_zip = package_results(project_id, project_file, job_id)
+        
+        if result_zip:
+            update_job_status(job_id, 'completed', 100, 'Processing complete - 3D mesh ready for download')
             
-            # Package results
-            result_zip = package_results(project_id, project_file, job_id)
+            # Store result path in job info
+            with jobs_lock:
+                jobs[job_id]['result_path'] = result_zip
             
-            if result_zip:
-                update_job_status(job_id, 'completed', 100, 'Processing complete')
-                
-                # Store result path in job info
-                with jobs_lock:
-                    jobs[job_id]['result_path'] = result_zip
-                
-                logger.info(f"Job {job_id} completed successfully")
-            else:
-                update_job_status(job_id, 'failed', 80, 'Failed to package results')
+            logger.info(f"✅ Job {job_id} completed successfully")
         else:
-            error_msg = stderr if stderr else 'Unknown error'
-            logger.error(f"RealityScan failed: {error_msg}")
-            update_job_status(job_id, 'failed', 0, f'RealityScan failed: {error_msg[:100]}')
-    
-    except subprocess.TimeoutExpired:
-        logger.error(f"Job {job_id} timeout")
-        update_job_status(job_id, 'failed', 0, 'Processing timeout (1 hour)')
+            update_job_status(job_id, 'failed', 80, 'Failed to package results')
     
     except Exception as e:
         logger.error(f"Job {job_id} error: {e}")
