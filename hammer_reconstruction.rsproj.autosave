@@ -1,0 +1,115 @@
+<RealityScan version="2.1.0.119011" sceneRevision="6" sceneId="{C56306AD-76CB-4E4A-8D1E-9C510CE3AA34}">
+    <autosave>
+        <AutoSaveMetadata
+            machine="Rehaan"
+            instance="0"
+            resourceCachePath="C:\Users\Gaming\AppData\Local\Temp\RealityScan\"
+        />
+    </autosave>
+    <certificates>
+    </certificates>
+    <coordinates>
+        <projectCoordinates index="-1"/>
+    </coordinates>
+    <source>
+        <input fileName="Images\IMG_1553.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1554.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1555.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1556.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1557.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1558.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1559.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1560.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1561.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1562.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1563.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1564.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1565.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1566.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1567.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1568.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1569.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1570.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1571.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1572.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1573.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1574.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1575.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1576.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1577.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1578.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1579.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1580.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1581.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1582.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1583.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1584.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1585.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1586.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1587.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1588.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1589.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1590.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1591.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1592.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1593.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1594.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1595.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1596.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1597.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1598.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1599.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1600.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1601.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1602.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1603.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1604.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1605.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1606.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1607.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1608.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1609.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1610.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1611.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1612.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1613.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1614.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1615.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1616.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1617.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1618.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1619.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1620.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1621.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1622.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1623.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1624.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1625.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1626.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1627.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1628.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1629.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1630.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1631.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1632.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1633.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1634.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1635.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1636.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1637.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1638.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1639.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1640.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+        <input fileName="Images\IMG_1641.JPG" width="5472" height="3648" wicPixelFormat="6FDDC324-4E03-4BFE-B185-3D77768DC90C"/>
+    </source>
+    <reconstructions selectedComponentId="{7683DDD6-39F0-4479-BF24-A4BD8314DA47}">
+        <component name="Component 0" id="{7683DDD6-39F0-4479-BF24-A4BD8314DA47}" classId="{21845778-D8E3-435C-9493-2E39FEE10F29}" fileName="hammer_reconstruction.autosave\sfm0.dat" selectedModel="-1" sfmVisible="1"> 
+            <colorNormalization name="colorNormalization" fileName="hammer_reconstruction.autosave\colorNormalization0.dat" />
+            <metadata fileName="hammer_reconstruction.autosave\metadata0.dat"/>
+        </component>
+    </reconstructions>
+    <entities name="entities" fileName="hammer_reconstruction.autosave\entities0.dat"/>
+    <animation fileName="hammer_reconstruction.autosave\animation0.dat"/>
+    <controlpoints fileName="hammer_reconstruction.autosave\controlpoints0.dat"/>
+    <appConfig fileName="hammer_reconstruction.autosave\appConfig0.dat" />
+</RealityScan>

@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-01-26T02:47:56.478138",
+  "commands": [
+    {
+      "type": "headless",
+      "value": "-headless"
+    },
+    {
+      "type": "scene",
+      "value": "-newScene"
+    },
+    {
+      "type": "input",
+      "value": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\"
+    },
+    {
+      "type": "processing",
+      "value": "-detectFeatures"
+    },
+    {
+      "type": "processing",
+      "value": "-align"
+    },
+    {
+      "type": "processing",
+      "value": "-selectMaximalComponent"
+    },
+    {
+      "type": "output",
+      "value": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\hammer_reconstruction.rsproj"
+    },
+    {
+      "type": "control",
+      "value": "-quit"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
 # ============================================================================
 
 # Ground Station IP (CHANGE THIS to your Windows PC's IP address)
-GROUND_STATION_IP = "192.168.1.28"
+GROUND_STATION_IP = "192.168.1.18"
 GROUND_STATION_PORT = 5000
 
 # ============================================================================

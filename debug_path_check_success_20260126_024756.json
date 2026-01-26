@@ -1,0 +1,920 @@
+{
+  "timestamp": "2026-01-26T02:47:56.464420",
+  "config": {
+    "REALITYSCAN_EXE": "c:\\Program Files\\Epic Games\\RealityScan_2.1\\RealityScan.exe",
+    "IMAGES_FOLDER": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images",
+    "PROJECT_FILE": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\hammer_reconstruction.rsproj",
+    "USE_HEADLESS": true,
+    "INCLUDE_SUBDIRS": false,
+    "USE_DRAFT_ALIGN": false,
+    "DETECT_FEATURES_FIRST": true,
+    "MONITOR_PROGRESS": false,
+    "PROGRESS_FILE": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\progress.txt",
+    "DEBUG_MODE": true,
+    "DEBUG_LOG_FILE": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\debug.log",
+    "SAVE_COMMAND_HISTORY": true,
+    "VERBOSE_OUTPUT": true,
+    "TRACK_TIMING": true,
+    "AUTO_OPEN_PROJECT": true
+  },
+  "checks": {
+    "executable": "FOUND",
+    "images_folder": "FOUND",
+    "images_count": 178
+  },
+  "images": {
+    "count": 178,
+    "details": [
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1553.JPG",
+        "size": 5055931,
+        "modified": "2026-01-07T00:34:17.150790"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1554.JPG",
+        "size": 5003433,
+        "modified": "2026-01-07T00:34:17.191927"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1555.JPG",
+        "size": 5057391,
+        "modified": "2026-01-07T00:34:17.233537"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1556.JPG",
+        "size": 5213924,
+        "modified": "2026-01-07T00:34:17.276209"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1557.JPG",
+        "size": 5114668,
+        "modified": "2026-01-07T00:34:17.316786"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1558.JPG",
+        "size": 5228179,
+        "modified": "2026-01-07T00:34:17.361225"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1559.JPG",
+        "size": 5403490,
+        "modified": "2026-01-07T00:34:17.405271"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1560.JPG",
+        "size": 5209805,
+        "modified": "2026-01-07T00:34:17.449906"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1561.JPG",
+        "size": 5097826,
+        "modified": "2026-01-07T00:34:17.498034"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1562.JPG",
+        "size": 5061324,
+        "modified": "2026-01-07T00:34:17.539150"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1563.JPG",
+        "size": 4906278,
+        "modified": "2026-01-07T00:34:17.580255"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1564.JPG",
+        "size": 5230902,
+        "modified": "2026-01-07T00:34:17.624137"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1565.JPG",
+        "size": 5246804,
+        "modified": "2026-01-07T00:34:17.668279"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1566.JPG",
+        "size": 5190404,
+        "modified": "2026-01-07T00:34:17.711439"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1567.JPG",
+        "size": 5094823,
+        "modified": "2026-01-07T00:34:17.753892"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1568.JPG",
+        "size": 5211452,
+        "modified": "2026-01-07T00:34:17.798249"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1569.JPG",
+        "size": 4942954,
+        "modified": "2026-01-07T00:34:17.841134"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1570.JPG",
+        "size": 5155830,
+        "modified": "2026-01-07T00:34:17.884244"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1571.JPG",
+        "size": 5281592,
+        "modified": "2026-01-07T00:34:17.929983"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1572.JPG",
+        "size": 5450584,
+        "modified": "2026-01-07T00:34:17.976012"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1573.JPG",
+        "size": 5599943,
+        "modified": "2026-01-07T00:34:18.023222"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1574.JPG",
+        "size": 5704857,
+        "modified": "2026-01-07T00:34:18.075315"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1575.JPG",
+        "size": 5735439,
+        "modified": "2026-01-07T00:34:18.124043"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1576.JPG",
+        "size": 5478484,
+        "modified": "2026-01-07T00:34:18.170877"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1577.JPG",
+        "size": 5400234,
+        "modified": "2026-01-07T00:34:18.218377"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1578.JPG",
+        "size": 5500582,
+        "modified": "2026-01-07T00:34:18.266208"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1579.JPG",
+        "size": 5103030,
+        "modified": "2026-01-07T00:34:18.314249"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1580.JPG",
+        "size": 5103417,
+        "modified": "2026-01-07T00:34:18.360257"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1581.JPG",
+        "size": 5491026,
+        "modified": "2026-01-07T00:34:18.409833"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1582.JPG",
+        "size": 5378083,
+        "modified": "2026-01-07T00:34:18.458033"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1583.JPG",
+        "size": 5619383,
+        "modified": "2026-01-07T00:34:18.510313"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1584.JPG",
+        "size": 5536487,
+        "modified": "2026-01-07T00:34:18.558015"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1585.JPG",
+        "size": 5699846,
+        "modified": "2026-01-07T00:34:18.606321"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1586.JPG",
+        "size": 5680792,
+        "modified": "2026-01-07T00:34:18.652036"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1587.JPG",
+        "size": 5821919,
+        "modified": "2026-01-07T00:34:18.700570"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1588.JPG",
+        "size": 5345466,
+        "modified": "2026-01-07T00:34:18.743670"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1589.JPG",
+        "size": 5769999,
+        "modified": "2026-01-07T00:34:18.792380"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1590.JPG",
+        "size": 5589546,
+        "modified": "2026-01-07T00:34:18.840655"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1591.JPG",
+        "size": 5869043,
+        "modified": "2026-01-07T00:34:18.894164"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1592.JPG",
+        "size": 5310615,
+        "modified": "2026-01-07T00:34:18.940817"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1593.JPG",
+        "size": 5159816,
+        "modified": "2026-01-07T00:34:18.988981"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1594.JPG",
+        "size": 5090747,
+        "modified": "2026-01-07T00:34:19.034100"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1595.JPG",
+        "size": 4853141,
+        "modified": "2026-01-07T00:34:19.078314"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1596.JPG",
+        "size": 4552815,
+        "modified": "2026-01-07T00:34:19.120075"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1597.JPG",
+        "size": 4712188,
+        "modified": "2026-01-07T00:34:19.163723"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1598.JPG",
+        "size": 4686260,
+        "modified": "2026-01-07T00:34:19.206380"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1599.JPG",
+        "size": 4154350,
+        "modified": "2026-01-07T00:34:19.245006"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1600.JPG",
+        "size": 4703290,
+        "modified": "2026-01-07T00:34:19.285302"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1601.JPG",
+        "size": 4491721,
+        "modified": "2026-01-07T00:34:19.324111"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1602.JPG",
+        "size": 4912214,
+        "modified": "2026-01-07T00:34:19.368171"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1603.JPG",
+        "size": 4874177,
+        "modified": "2026-01-07T00:34:19.410345"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1604.JPG",
+        "size": 4838771,
+        "modified": "2026-01-07T00:34:19.452997"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1605.JPG",
+        "size": 4633039,
+        "modified": "2026-01-07T00:34:19.495222"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1606.JPG",
+        "size": 5025330,
+        "modified": "2026-01-07T00:34:19.543373"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1607.JPG",
+        "size": 5118378,
+        "modified": "2026-01-07T00:34:19.590158"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1608.JPG",
+        "size": 5240925,
+        "modified": "2026-01-07T00:34:19.636939"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1609.JPG",
+        "size": 5127109,
+        "modified": "2026-01-07T00:34:19.699248"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1610.JPG",
+        "size": 5248183,
+        "modified": "2026-01-07T00:34:19.743359"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1611.JPG",
+        "size": 5401672,
+        "modified": "2026-01-07T00:34:19.788211"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1612.JPG",
+        "size": 5292208,
+        "modified": "2026-01-07T00:34:19.833409"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1613.JPG",
+        "size": 5343664,
+        "modified": "2026-01-07T00:34:19.878955"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1614.JPG",
+        "size": 5105443,
+        "modified": "2026-01-07T00:34:19.922342"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1615.JPG",
+        "size": 5459657,
+        "modified": "2026-01-07T00:34:19.967732"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1616.JPG",
+        "size": 5358855,
+        "modified": "2026-01-07T00:34:20.011268"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1617.JPG",
+        "size": 5269980,
+        "modified": "2026-01-07T00:34:20.055028"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1618.JPG",
+        "size": 5672193,
+        "modified": "2026-01-07T00:34:20.101145"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1619.JPG",
+        "size": 5546274,
+        "modified": "2026-01-07T00:34:20.147821"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1620.JPG",
+        "size": 5477399,
+        "modified": "2026-01-07T00:34:20.192350"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1621.JPG",
+        "size": 5853444,
+        "modified": "2026-01-07T00:34:20.241057"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1622.JPG",
+        "size": 5752466,
+        "modified": "2026-01-07T00:34:20.288650"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1623.JPG",
+        "size": 5745575,
+        "modified": "2026-01-07T00:34:20.337259"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1624.JPG",
+        "size": 5706160,
+        "modified": "2026-01-07T00:34:20.383860"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1625.JPG",
+        "size": 5650918,
+        "modified": "2026-01-07T00:34:20.429166"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1626.JPG",
+        "size": 5902033,
+        "modified": "2026-01-07T00:34:20.477973"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1627.JPG",
+        "size": 5707830,
+        "modified": "2026-01-07T00:34:20.528677"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1628.JPG",
+        "size": 5645714,
+        "modified": "2026-01-07T00:34:20.576301"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1629.JPG",
+        "size": 5778664,
+        "modified": "2026-01-07T00:34:20.623632"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1630.JPG",
+        "size": 5763503,
+        "modified": "2026-01-07T00:34:20.673057"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1631.JPG",
+        "size": 5522657,
+        "modified": "2026-01-07T00:34:20.720310"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1632.JPG",
+        "size": 5843071,
+        "modified": "2026-01-07T00:34:20.768902"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1633.JPG",
+        "size": 5818576,
+        "modified": "2026-01-07T00:34:20.815143"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1634.JPG",
+        "size": 6329355,
+        "modified": "2026-01-07T00:34:20.865207"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1635.JPG",
+        "size": 6031588,
+        "modified": "2026-01-07T00:34:20.914244"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1636.JPG",
+        "size": 6075114,
+        "modified": "2026-01-07T00:34:20.962801"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1637.JPG",
+        "size": 5838269,
+        "modified": "2026-01-07T00:34:21.008843"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1638.JPG",
+        "size": 4908574,
+        "modified": "2026-01-07T00:34:21.049987"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1639.JPG",
+        "size": 4491453,
+        "modified": "2026-01-07T00:34:21.093652"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1640.JPG",
+        "size": 4494543,
+        "modified": "2026-01-07T00:34:21.134214"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1641.JPG",
+        "size": 4556252,
+        "modified": "2026-01-07T00:34:21.175122"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1553.JPG",
+        "size": 5055931,
+        "modified": "2026-01-07T00:34:17.150790"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1554.JPG",
+        "size": 5003433,
+        "modified": "2026-01-07T00:34:17.191927"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1555.JPG",
+        "size": 5057391,
+        "modified": "2026-01-07T00:34:17.233537"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1556.JPG",
+        "size": 5213924,
+        "modified": "2026-01-07T00:34:17.276209"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1557.JPG",
+        "size": 5114668,
+        "modified": "2026-01-07T00:34:17.316786"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1558.JPG",
+        "size": 5228179,
+        "modified": "2026-01-07T00:34:17.361225"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1559.JPG",
+        "size": 5403490,
+        "modified": "2026-01-07T00:34:17.405271"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1560.JPG",
+        "size": 5209805,
+        "modified": "2026-01-07T00:34:17.449906"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1561.JPG",
+        "size": 5097826,
+        "modified": "2026-01-07T00:34:17.498034"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1562.JPG",
+        "size": 5061324,
+        "modified": "2026-01-07T00:34:17.539150"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1563.JPG",
+        "size": 4906278,
+        "modified": "2026-01-07T00:34:17.580255"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1564.JPG",
+        "size": 5230902,
+        "modified": "2026-01-07T00:34:17.624137"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1565.JPG",
+        "size": 5246804,
+        "modified": "2026-01-07T00:34:17.668279"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1566.JPG",
+        "size": 5190404,
+        "modified": "2026-01-07T00:34:17.711439"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1567.JPG",
+        "size": 5094823,
+        "modified": "2026-01-07T00:34:17.753892"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1568.JPG",
+        "size": 5211452,
+        "modified": "2026-01-07T00:34:17.798249"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1569.JPG",
+        "size": 4942954,
+        "modified": "2026-01-07T00:34:17.841134"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1570.JPG",
+        "size": 5155830,
+        "modified": "2026-01-07T00:34:17.884244"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1571.JPG",
+        "size": 5281592,
+        "modified": "2026-01-07T00:34:17.929983"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1572.JPG",
+        "size": 5450584,
+        "modified": "2026-01-07T00:34:17.976012"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1573.JPG",
+        "size": 5599943,
+        "modified": "2026-01-07T00:34:18.023222"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1574.JPG",
+        "size": 5704857,
+        "modified": "2026-01-07T00:34:18.075315"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1575.JPG",
+        "size": 5735439,
+        "modified": "2026-01-07T00:34:18.124043"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1576.JPG",
+        "size": 5478484,
+        "modified": "2026-01-07T00:34:18.170877"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1577.JPG",
+        "size": 5400234,
+        "modified": "2026-01-07T00:34:18.218377"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1578.JPG",
+        "size": 5500582,
+        "modified": "2026-01-07T00:34:18.266208"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1579.JPG",
+        "size": 5103030,
+        "modified": "2026-01-07T00:34:18.314249"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1580.JPG",
+        "size": 5103417,
+        "modified": "2026-01-07T00:34:18.360257"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1581.JPG",
+        "size": 5491026,
+        "modified": "2026-01-07T00:34:18.409833"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1582.JPG",
+        "size": 5378083,
+        "modified": "2026-01-07T00:34:18.458033"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1583.JPG",
+        "size": 5619383,
+        "modified": "2026-01-07T00:34:18.510313"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1584.JPG",
+        "size": 5536487,
+        "modified": "2026-01-07T00:34:18.558015"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1585.JPG",
+        "size": 5699846,
+        "modified": "2026-01-07T00:34:18.606321"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1586.JPG",
+        "size": 5680792,
+        "modified": "2026-01-07T00:34:18.652036"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1587.JPG",
+        "size": 5821919,
+        "modified": "2026-01-07T00:34:18.700570"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1588.JPG",
+        "size": 5345466,
+        "modified": "2026-01-07T00:34:18.743670"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1589.JPG",
+        "size": 5769999,
+        "modified": "2026-01-07T00:34:18.792380"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1590.JPG",
+        "size": 5589546,
+        "modified": "2026-01-07T00:34:18.840655"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1591.JPG",
+        "size": 5869043,
+        "modified": "2026-01-07T00:34:18.894164"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1592.JPG",
+        "size": 5310615,
+        "modified": "2026-01-07T00:34:18.940817"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1593.JPG",
+        "size": 5159816,
+        "modified": "2026-01-07T00:34:18.988981"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1594.JPG",
+        "size": 5090747,
+        "modified": "2026-01-07T00:34:19.034100"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1595.JPG",
+        "size": 4853141,
+        "modified": "2026-01-07T00:34:19.078314"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1596.JPG",
+        "size": 4552815,
+        "modified": "2026-01-07T00:34:19.120075"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1597.JPG",
+        "size": 4712188,
+        "modified": "2026-01-07T00:34:19.163723"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1598.JPG",
+        "size": 4686260,
+        "modified": "2026-01-07T00:34:19.206380"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1599.JPG",
+        "size": 4154350,
+        "modified": "2026-01-07T00:34:19.245006"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1600.JPG",
+        "size": 4703290,
+        "modified": "2026-01-07T00:34:19.285302"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1601.JPG",
+        "size": 4491721,
+        "modified": "2026-01-07T00:34:19.324111"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1602.JPG",
+        "size": 4912214,
+        "modified": "2026-01-07T00:34:19.368171"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1603.JPG",
+        "size": 4874177,
+        "modified": "2026-01-07T00:34:19.410345"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1604.JPG",
+        "size": 4838771,
+        "modified": "2026-01-07T00:34:19.452997"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1605.JPG",
+        "size": 4633039,
+        "modified": "2026-01-07T00:34:19.495222"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1606.JPG",
+        "size": 5025330,
+        "modified": "2026-01-07T00:34:19.543373"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1607.JPG",
+        "size": 5118378,
+        "modified": "2026-01-07T00:34:19.590158"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1608.JPG",
+        "size": 5240925,
+        "modified": "2026-01-07T00:34:19.636939"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1609.JPG",
+        "size": 5127109,
+        "modified": "2026-01-07T00:34:19.699248"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1610.JPG",
+        "size": 5248183,
+        "modified": "2026-01-07T00:34:19.743359"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1611.JPG",
+        "size": 5401672,
+        "modified": "2026-01-07T00:34:19.788211"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1612.JPG",
+        "size": 5292208,
+        "modified": "2026-01-07T00:34:19.833409"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1613.JPG",
+        "size": 5343664,
+        "modified": "2026-01-07T00:34:19.878955"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1614.JPG",
+        "size": 5105443,
+        "modified": "2026-01-07T00:34:19.922342"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1615.JPG",
+        "size": 5459657,
+        "modified": "2026-01-07T00:34:19.967732"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1616.JPG",
+        "size": 5358855,
+        "modified": "2026-01-07T00:34:20.011268"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1617.JPG",
+        "size": 5269980,
+        "modified": "2026-01-07T00:34:20.055028"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1618.JPG",
+        "size": 5672193,
+        "modified": "2026-01-07T00:34:20.101145"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1619.JPG",
+        "size": 5546274,
+        "modified": "2026-01-07T00:34:20.147821"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1620.JPG",
+        "size": 5477399,
+        "modified": "2026-01-07T00:34:20.192350"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1621.JPG",
+        "size": 5853444,
+        "modified": "2026-01-07T00:34:20.241057"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1622.JPG",
+        "size": 5752466,
+        "modified": "2026-01-07T00:34:20.288650"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1623.JPG",
+        "size": 5745575,
+        "modified": "2026-01-07T00:34:20.337259"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1624.JPG",
+        "size": 5706160,
+        "modified": "2026-01-07T00:34:20.383860"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1625.JPG",
+        "size": 5650918,
+        "modified": "2026-01-07T00:34:20.429166"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1626.JPG",
+        "size": 5902033,
+        "modified": "2026-01-07T00:34:20.477973"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1627.JPG",
+        "size": 5707830,
+        "modified": "2026-01-07T00:34:20.528677"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1628.JPG",
+        "size": 5645714,
+        "modified": "2026-01-07T00:34:20.576301"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1629.JPG",
+        "size": 5778664,
+        "modified": "2026-01-07T00:34:20.623632"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1630.JPG",
+        "size": 5763503,
+        "modified": "2026-01-07T00:34:20.673057"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1631.JPG",
+        "size": 5522657,
+        "modified": "2026-01-07T00:34:20.720310"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1632.JPG",
+        "size": 5843071,
+        "modified": "2026-01-07T00:34:20.768902"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1633.JPG",
+        "size": 5818576,
+        "modified": "2026-01-07T00:34:20.815143"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1634.JPG",
+        "size": 6329355,
+        "modified": "2026-01-07T00:34:20.865207"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1635.JPG",
+        "size": 6031588,
+        "modified": "2026-01-07T00:34:20.914244"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1636.JPG",
+        "size": 6075114,
+        "modified": "2026-01-07T00:34:20.962801"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1637.JPG",
+        "size": 5838269,
+        "modified": "2026-01-07T00:34:21.008843"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1638.JPG",
+        "size": 4908574,
+        "modified": "2026-01-07T00:34:21.049987"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1639.JPG",
+        "size": 4491453,
+        "modified": "2026-01-07T00:34:21.093652"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1640.JPG",
+        "size": 4494543,
+        "modified": "2026-01-07T00:34:21.134214"
+      },
+      {
+        "path": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\IMG_1641.JPG",
+        "size": 4556252,
+        "modified": "2026-01-07T00:34:21.175122"
+      }
+    ]
+  }
+}

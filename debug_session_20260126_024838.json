@@ -1,0 +1,39 @@
+{
+  "start_time": "2026-01-26T02:47:56.464420",
+  "config": {
+    "REALITYSCAN_EXE": "c:\\Program Files\\Epic Games\\RealityScan_2.1\\RealityScan.exe",
+    "IMAGES_FOLDER": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images",
+    "PROJECT_FILE": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\hammer_reconstruction.rsproj",
+    "USE_HEADLESS": true,
+    "INCLUDE_SUBDIRS": false,
+    "USE_DRAFT_ALIGN": false,
+    "DETECT_FEATURES_FIRST": true,
+    "MONITOR_PROGRESS": false,
+    "PROGRESS_FILE": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\progress.txt",
+    "DEBUG_MODE": true,
+    "DEBUG_LOG_FILE": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\debug.log",
+    "SAVE_COMMAND_HISTORY": true,
+    "VERBOSE_OUTPUT": true,
+    "TRACK_TIMING": true,
+    "AUTO_OPEN_PROJECT": true
+  },
+  "system_info": {
+    "platform": "win32",
+    "python_version": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+    "cwd": "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone"
+  },
+  "commands": [
+    "-headless",
+    "-newScene",
+    "-addFolder",
+    "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\",
+    "-detectFeatures",
+    "-align",
+    "-selectMaximalComponent",
+    "-save",
+    "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\hammer_reconstruction.rsproj",
+    "-quit"
+  ],
+  "status": "SUCCESS",
+  "end_time": "2026-01-26T02:48:38.086941"
+}

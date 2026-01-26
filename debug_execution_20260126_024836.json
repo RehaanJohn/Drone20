@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-01-26T02:47:56.480645",
+  "executable": "c:\\Program Files\\Epic Games\\RealityScan_2.1\\RealityScan.exe",
+  "commands": [
+    "-headless",
+    "-newScene",
+    "-addFolder",
+    "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\",
+    "-detectFeatures",
+    "-align",
+    "-selectMaximalComponent",
+    "-save",
+    "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\hammer_reconstruction.rsproj",
+    "-quit"
+  ],
+  "full_command": "\"c:\\Program Files\\Epic Games\\RealityScan_2.1\\RealityScan.exe\" -headless -newScene -addFolder C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\ -detectFeatures -align -selectMaximalComponent -save C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\hammer_reconstruction.rsproj -quit",
+  "actual_cmd_list": [
+    "c:\\Program Files\\Epic Games\\RealityScan_2.1\\RealityScan.exe",
+    "-headless",
+    "-newScene",
+    "-addFolder",
+    "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\Images\\",
+    "-detectFeatures",
+    "-align",
+    "-selectMaximalComponent",
+    "-save",
+    "C:\\Users\\Gaming\\Pictures\\Coding_Projects\\Drone\\hammer_reconstruction.rsproj",
+    "-quit"
+  ],
+  "process_id": 32592,
+  "stdout": [],
+  "stderr": [],
+  "return_code": 0,
+  "project_file_size": 12541,
+  "status": "SUCCESS"
+}

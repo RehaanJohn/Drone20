@@ -4,7 +4,36 @@
 
 ---
 
-## ⚡ Quick Start
+## 🎯 ADVANCED 3D MESH GENERATION
+
+**NEW: Uses EXACT method from `image_conversion/method2/robust_pipeline.py`**
+
+### Features
+- ✅ **SAM (Segment Anything)** - GPU-accelerated foreground masking
+- ✅ **COLMAP CUDA** - Sparse/dense reconstruction with GPU  
+- ✅ **Open3D Poisson** - High-quality meshing (depth=9, 120K triangles)
+- ✅ **GPU Support** - CUDA / DirectML / CPU fallback
+- ✅ **Advanced Cleaning** - Plane removal + outlier filtering
+
+### Quick Start
+
+```bash
+# 1. Setup (one-time)
+setup_advanced_processing.bat
+
+# 2. Download COLMAP CUDA (if needed)
+# https://github.com/colmap/colmap/releases
+# Extract to: Drone/colmap-x64-windows-cuda/
+
+# 3. Process captured frames
+python advanced_mesh_generator.py --session drone_live_1769377285
+```
+
+**Output:** `live_sessions/SESSION_NAME/output/final_mesh.stl`
+
+---
+
+## ⚡ Quick Start - Streaming
 
 ### 1. Configure Network (30 seconds)
 
@@ -131,17 +160,21 @@ SKIP_FRAMES = 0
 ## 🧪 Testing
 
 ### Test Camera (RPi):
+
 ```bash
 python3 camera_diagnostic.py
 ```
+
 This will detect your camera and recommend the best settings.
 
 ### Test Connection:
+
 ```bash
 python test_streaming.py
 ```
 
 ### Calculate Bandwidth:
+
 ```bash
 python bandwidth_calculator.py
 ```
@@ -153,11 +186,13 @@ python bandwidth_calculator.py
 ### "Cannot open camera" or Camera Errors
 
 **Step 1: Run camera diagnostic**
+
 ```bash
 python3 camera_diagnostic.py
 ```
 
 **Step 2: Common fixes:**
+
 - ✅ Check devices: `ls /dev/video*`
 - ✅ Add user to video group: `sudo usermod -a -G video $USER`
 - ✅ For RPi Camera Module:
@@ -193,6 +228,72 @@ Edit `streaming_config.py` with recommended CAMERA_ID
 
 ---
 
+## 🎨 Automatic 3D Mesh Generation
+
+Once frames are captured, automatically generate STL meshes!
+
+### Prerequisites:
+
+1. **Install COLMAP** (CUDA version for GPU acceleration):
+   - Download from: https://github.com/colmap/colmap/releases
+   - Install to: `C:\Program Files\COLMAP\`
+   - Or update path in `auto_process_mesh.py`
+
+2. **Install Python packages:**
+```bash
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+pip install opencv-python numpy open3d
+pip install git+https://github.com/facebookresearch/segment-anything.git
+```
+
+3. **Download SAM Model** (optional, for better quality):
+   - Download: https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
+   - Place in Drone folder: `sam_vit_b_01ec64.pth`
+
+### Usage:
+
+**Option 1: Auto-Monitor Mode (Recommended)**
+```bash
+python auto_process_mesh.py --monitor
+```
+- Automatically watches `live_sessions/` folder
+- Processes new sessions as they complete
+- Runs in background
+
+**Option 2: Process Latest Session**
+```bash
+python auto_process_mesh.py
+```
+
+**Option 3: Process Specific Session**
+```bash
+python auto_process_mesh.py --session drone_live_1737843600
+```
+
+### Output:
+
+```
+live_sessions/
+  └── drone_live_<timestamp>/
+      ├── frames/              # Original captured frames
+      ├── processing/          # Intermediate files
+      │   ├── masked/         # SAM-processed frames
+      │   └── colmap/         # COLMAP workspace
+      └── output/
+          ├── dense.ply       # Dense point cloud
+          └── final_mesh.stl  # Final 3D mesh! 🎉
+```
+
+### Performance:
+
+| Frames | Processing Time (RTX GPU) |
+|--------|---------------------------|
+| 50-75  | ~5-8 minutes             |
+| 100    | ~10-12 minutes           |
+| 150+   | ~15-20 minutes           |
+
+---
+
 ## 📊 System Architecture
 
 ```
@@ -204,8 +305,8 @@ Edit `streaming_config.py` with recommended CAMERA_ID
 │ 2. Compress     │   Compressed     │ 2. Decompress    │
 │    (5-10ms)     │   JPEGs          │    (5ms)         │
 │ 3. Send         │  (~500KB-4MB/s)  │ 3. Save frames   │
-│                 │                  │ 4. Process (3D)  │
-│ CPU: 15-25%     │                  │    (parallel)    │
+│                 │                  │ 4. AUTO-PROCESS  │
+│ CPU: 15-25%     │                  │    → STL Mesh!   │
 └─────────────────┘                  └──────────────────┘
 ```
 
@@ -255,15 +356,24 @@ python realityscan_align.py live_sessions/drone_live_1737843600/frames
 
 ### Launchers:
 
+### Launchers:
+
 - `start_ground_station.bat` - Windows quick start
 - `start_rpi_stream.sh` - RPi quick start
 
+### 3D Mesh Generation:
+
+- `auto_process_mesh.py` - **NEW!** Automatic STL mesh generator
+- Download SAM model: `sam_vit_b_01ec64.pth`
+- Install COLMAP (CUDA version recommended)
+
 ### Utilities:
 
+- `camera_diagnostic.py` - Camera detection & troubleshooting
 - `test_streaming.py` - Diagnostic tests
 - `bandwidth_calculator.py` - Network calculator
 
-### 3D Reconstruction (Existing):
+### Legacy (Old Batch System):
 
 - `windows_server_api.py` - RealityScan processing server
 - `realityscan_align.py` - 3D reconstruction script
@@ -276,8 +386,9 @@ python realityscan_align.py live_sessions/drone_live_1737843600/frames
 1. **Use Ethernet** when possible for best performance
 2. **Monitor stats** on both RPi and ground station
 3. **Adjust settings** based on your network quality
-4. **Auto-processing** triggers every 50 frames (configurable)
+4. **Run auto-processor** in background with `--monitor` flag
 5. **Multiple drones** supported (unique session IDs)
+6. **Need 50+ frames** for good 3D reconstruction
 
 ---
 
@@ -289,19 +400,34 @@ You're ready when:
 - ✅ RPi shows "Streaming active" with FPS counter
 - ✅ Frames are saving to `live_sessions/` folder
 - ✅ CPU usage on RPi is low (15-25%)
+- ✅ Auto-processor generates STL mesh
 - ✅ No error messages
 
 ---
 
-## 🚀 Next Steps
+## 🚀 Complete Workflow
 
+### Quick Start (5 minutes):
 1. Configure IP in `streaming_config.py`
 2. Start ground station: `start_ground_station.bat`
-3. Start RPi stream: `./start_rpi_stream.sh`
-4. Fly and watch real-time streaming!
-5. Process frames with RealityScan when done
+3. Start auto-processor: `python auto_process_mesh.py --monitor`
+4. Start RPi stream: `./start_rpi_stream.sh`
+5. Fly drone and capture!
 
-**Total setup time: ~5 minutes**
+### Full Pipeline (Automatic):
+```
+Drone captures → Stream to ground station → Auto-save frames
+                                          ↓
+                              Auto-detect new session
+                                          ↓
+                              SAM masking + COLMAP processing
+                                          ↓
+                              Generate STL mesh (10-15 min)
+                                          ↓
+                              final_mesh.stl ready! 🎉
+```
+
+**From flight to 3D mesh: Fully automated!**
 
 ---
 

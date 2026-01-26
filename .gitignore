@@ -1,0 +1,98 @@
+# =========================
+# OS junk
+# =========================
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# =========================
+# Editor / IDE files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# =========================
+# Python (if using scripts/tools)
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+
+# =========================
+# C / C++ build artifacts
+# =========================
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.out
+build/
+dist/
+
+# =========================
+# Embedded / MCU tools
+# =========================
+*.lst
+*.sym
+*.d
+.openocd/
+.vscode/c_cpp_properties.json
+
+# =========================
+# KiCad / Hardware design
+# =========================
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+*.dsn
+*.ses
+*.cache
+fp-info-cache
+*-cache.lib
+*-rescue.lib
+*-rescue.kicad_sch
+*.net
+
+# =========================
+# Temporary / lock files
+# =========================
+*.lock
+.lock
+*.lck
+
+# =========================
+# Archives & exports
+# =========================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# =========================
+# Environment & secrets
+# =========================
+.env
+.env.*
+*.key
+*.pem
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
