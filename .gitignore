@@ -96,3 +96,26 @@ fp-info-cache
 # =========================
 logs/
 *.log
+
+# =========================
+# RealityCapture / Photogrammetry
+# =========================
+*.autosave
+*.rsproj.autosave
+*.rcproj.autosave
+
+# =========================
+# Large model files & processing outputs
+# =========================
+*.pth
+*.onnx
+*.pt
+*.h5
+*.pkl
+*.pickle
+
+# =========================
+# Debug files
+# =========================
+debug_*.json
+debug_*.txt
