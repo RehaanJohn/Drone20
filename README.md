@@ -9,8 +9,9 @@
 **NEW: Uses EXACT method from `image_conversion/method2/robust_pipeline.py`**
 
 ### Features
+
 - ✅ **SAM (Segment Anything)** - GPU-accelerated foreground masking
-- ✅ **COLMAP CUDA** - Sparse/dense reconstruction with GPU  
+- ✅ **COLMAP CUDA** - Sparse/dense reconstruction with GPU
 - ✅ **Open3D Poisson** - High-quality meshing (depth=9, 120K triangles)
 - ✅ **GPU Support** - CUDA / DirectML / CPU fallback
 - ✅ **Advanced Cleaning** - Plane removal + outlier filtering
@@ -240,6 +241,7 @@ Once frames are captured, automatically generate STL meshes!
    - Or update path in `auto_process_mesh.py`
 
 2. **Install Python packages:**
+
 ```bash
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 pip install opencv-python numpy open3d
@@ -253,19 +255,23 @@ pip install git+https://github.com/facebookresearch/segment-anything.git
 ### Usage:
 
 **Option 1: Auto-Monitor Mode (Recommended)**
+
 ```bash
 python auto_process_mesh.py --monitor
 ```
+
 - Automatically watches `live_sessions/` folder
 - Processes new sessions as they complete
 - Runs in background
 
 **Option 2: Process Latest Session**
+
 ```bash
 python auto_process_mesh.py
 ```
 
 **Option 3: Process Specific Session**
+
 ```bash
 python auto_process_mesh.py --session drone_live_1737843600
 ```
@@ -287,10 +293,10 @@ live_sessions/
 ### Performance:
 
 | Frames | Processing Time (RTX GPU) |
-|--------|---------------------------|
-| 50-75  | ~5-8 minutes             |
-| 100    | ~10-12 minutes           |
-| 150+   | ~15-20 minutes           |
+| ------ | ------------------------- |
+| 50-75  | ~5-8 minutes              |
+| 100    | ~10-12 minutes            |
+| 150+   | ~15-20 minutes            |
 
 ---
 
@@ -408,6 +414,7 @@ You're ready when:
 ## 🚀 Complete Workflow
 
 ### Quick Start (5 minutes):
+
 1. Configure IP in `streaming_config.py`
 2. Start ground station: `start_ground_station.bat`
 3. Start auto-processor: `python auto_process_mesh.py --monitor`
@@ -415,6 +422,7 @@ You're ready when:
 5. Fly drone and capture!
 
 ### Full Pipeline (Automatic):
+
 ```
 Drone captures → Stream to ground station → Auto-save frames
                                           ↓
