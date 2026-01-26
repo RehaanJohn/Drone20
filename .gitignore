@@ -113,6 +113,12 @@ logs/
 *.h5
 *.pkl
 *.pickle
+sam_vit_b_01ec64.pth
+
+# =========================
+# COLMAP / Large binaries
+# =========================
+colmap-x64-windows-cuda/
 
 # =========================
 # Debug files
