@@ -46,15 +46,16 @@ master.wait_heartbeat()
 print("[OK] Heartbeat received")
 
 def send_rtl():
-    print("[ACTION] RTL sent")
-
-    master.mav.command_long_send(
+    if(master.mav.command_long_send(
         master.target_system,
         master.target_component,
         mavutil.mavlink.MAV_CMD_NAV_RETURN_TO_LAUNCH,
         0,
         0, 0, 0, 0, 0, 0, 0
-    )
+    )):
+        print("[ACTION] RTL sent")
+    else:
+        print("[ERROR] Failed to send RTL")
 
 # ================= CAMERA =================
 
