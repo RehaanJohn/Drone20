@@ -18,7 +18,7 @@ HEARTBEAT_TIMEOUT = 10  # seconds
 FLASK_PORT = 5000
 
 # Mission parameters
-TARGET_ALTITUDE = 2.0  # meters - altitude at which to trigger servo
+TARGET_ALTITUDE = 2.5  # meters - altitude at which to trigger servo
 ALTITUDE_THRESHOLD = 0.5  # meters - acceptable tolerance
 MIN_SAFE_ALTITUDE = 1.0  # meters - minimum altitude before allowing trigger
 
@@ -149,6 +149,39 @@ def send_rtl():
     except Exception as e:
         print(f"[ERROR] RTL send failed: {e}")
         system_status['error'] = f"RTL error: {e}"
+
+def send_descent_command():
+    """Send command to descend to target altitude while staying in AUTO mode"""
+    try:
+        print(f"[ACTION] Commanding descent to {TARGET_ALTITUDE}m (AUTO mode)")
+        
+        # Use MAV_CMD_DO_CHANGE_ALTITUDE to descend in AUTO mode
+        master.mav.command_long_send(
+            master.target_system,
+            master.target_component,
+            mavutil.mavlink.MAV_CMD_DO_CHANGE_ALTITUDE,
+            0,  # confirmation
+            TARGET_ALTITUDE,  # param1: target altitude (meters)
+            0,  # param2: frame (0 = relative to home)
+            0, 0, 0, 0, 0  # param3-7: unused
+        )
+        
+        # Wait for ACK
+        ack = master.recv_match(type='COMMAND_ACK', blocking=True, timeout=3)
+        if ack and ack.command == mavutil.mavlink.MAV_CMD_DO_CHANGE_ALTITUDE:
+            if ack.result == mavutil.mavlink.MAV_RESULT_ACCEPTED:
+                print(f"[OK] Descent command accepted - descending to {TARGET_ALTITUDE}m")
+                return True
+            else:
+                print(f"[WARN] Descent command result: {ack.result}")
+                return False
+        else:
+            print("[WARN] No descent command acknowledgment received")
+            return False
+    except Exception as e:
+        print(f"[ERROR] Descent command failed: {e}")
+        system_status['error'] = f"Descent error: {e}"
+        return False
 
 # ================= MAVLINK MONITORING THREAD =================
 def mavlink_monitor_thread():
@@ -542,11 +575,20 @@ def qr_scan_thread():
                     print(f"[DEBUG] Valid QR ({qr_count}/{QR_CONFIRM_FRAMES})")
                     
                     if qr_count >= QR_CONFIRM_FRAMES and not system_status['qr_confirmed']:
-                        print("[OK] QR CONFIRMED - Waiting for proper altitude and AUTO mode...")
+                        print("[OK] QR CONFIRMED - Initiating descent sequence...")
                         system_status['qr_confirmed'] = True
                         
-                        # Now wait for the MAVLink monitor to set ready_to_trigger
-                        print("[INFO] Monitoring altitude and flight mode...")
+                        # Step 1: Command descent to target altitude in AUTO mode
+                        print("[STEP 1] Sending descent command...")
+                        descent_success = send_descent_command()
+                        
+                        if not descent_success:
+                            print("[ERROR] Failed to initiate descent")
+                            system_status['error'] = "Descent command failed"
+                            break
+                        
+                        # Step 2: Wait for the MAVLink monitor to confirm conditions met
+                        print("[STEP 2] Monitoring altitude and flight mode...")
                         
                         # Wait for proper conditions
                         timeout_counter = 0
